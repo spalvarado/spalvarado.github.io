@@ -17,6 +17,9 @@ const Home = () => {
                 offers that relate to Software Development, Web Development, Data Engineering,<br/>
                 or AI and Machine Learning.<br/><br/>
 
+                I have a strong interest in Web Development and Software Engineering and wish <br/>
+                to grow in these roles, but am open to other roles such as AI/ML and Data Engineer.<br/>
+
                 To get to know me on a more personal level, please navigate to the Personal Life page!
                 </p>
             </div>
