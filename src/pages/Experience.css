@@ -1,0 +1,460 @@
+/* Experience/Resume Page - Earth & Forest Tones */
+
+* {
+    box-sizing: border-box;
+}
+
+.experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #2d3b2d;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #f5f3ed 0%, #e8e5d5 100%);
+    min-height: 100vh;
+}
+
+/* Header Section */
+.experience-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #7a9b76;
+}
+
+.experience-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #5a7556 0%, #7a9b76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -1px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    color: #4a5647;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(90, 117, 86, 0.1);
+}
+
+.contact-link:hover {
+    color: #5a7556;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(90, 117, 86, 0.2);
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, #6b8e67 0%, #5a7556 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(107, 142, 103, 0.4);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(107, 142, 103, 0.5);
+    background: linear-gradient(135deg, #5a7556 0%, #4a6348 100%);
+}
+
+.download-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    color: #2d3b2d;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #5a7556, #7a9b76);
+    border-radius: 2px;
+}
+
+/* Objective Section */
+.objective-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(90, 117, 86, 0.12);
+    border-left: 5px solid #7a9b76;
+}
+
+.objective-text {
+    font-size: 1.15rem;
+    color: #4a5647;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* Education Section */
+.education-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(90, 117, 86, 0.12);
+}
+
+.education-card {
+    margin-top: 1rem;
+}
+
+.education-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.institution-name {
+    font-size: 1.5rem;
+    color: #2d3b2d;
+    font-weight: 700;
+    margin: 0;
+}
+
+.education-date {
+    font-size: 1rem;
+    color: #5a7556;
+    font-weight: 600;
+}
+
+.degree-info {
+    font-size: 1.1rem;
+    color: #4a5647;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.coursework,
+.internship-note {
+    font-size: 1rem;
+    color: #4a5647;
+    margin: 0.75rem 0;
+    line-height: 1.7;
+}
+
+.coursework strong,
+.internship-note strong {
+    color: #2d3b2d;
+}
+
+/* Skills Section */
+.skills-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(90, 117, 86, 0.12);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category h4 {
+    font-size: 1.2rem;
+    color: #2d3b2d;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #5a7556 0%, #6b8e67 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(90, 117, 86, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(90, 117, 86, 0.4);
+}
+
+/* Work Experience Section */
+.work-experience-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(90, 117, 86, 0.12);
+}
+
+.job-card {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e8e5d5;
+}
+
+.job-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.job-title-company {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    color: #2d3b2d;
+    margin: 0 0 0.3rem 0;
+    font-weight: 700;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    color: #5a7556;
+    margin: 0;
+    font-weight: 600;
+}
+
+.job-date {
+    font-size: 1rem;
+    color: #6b7d5f;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.job-responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-responsibilities li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #4a5647;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.job-responsibilities li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #7a9b76;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(90, 117, 86, 0.12);
+}
+
+.project-card {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f9faf8 0%, #ffffff 100%);
+    border-radius: 12px;
+    border-left: 4px solid #7a9b76;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 16px rgba(90, 117, 86, 0.15);
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: #2d3b2d;
+    margin: 0;
+    font-weight: 700;
+}
+
+.project-date {
+    font-size: 0.95rem;
+    color: #6b7d5f;
+    font-weight: 600;
+}
+
+.project-tech {
+    font-size: 0.95rem;
+    color: #5a7556;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-style: italic;
+}
+
+.project-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-details li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #4a5647;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.project-details li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #6b8e67;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    .experience-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .objective-section,
+    .education-section,
+    .skills-section,
+    .work-experience-section,
+    .projects-section {
+        padding: 2rem;
+    }
+
+    .education-header-row,
+    .job-header,
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-container {
+        padding: 1.5rem 1rem 2.5rem;
+    }
+
+    .experience-title {
+        font-size: 2rem;
+    }
+
+    .objective-section,
+    .education-section,
+    .skills-section,
+    .work-experience-section,
+    .projects-section {
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .institution-name,
+    .job-title {
+        font-size: 1.2rem;
+    }
+
+    .project-title {
+        font-size: 1.15rem;
+    }
+}

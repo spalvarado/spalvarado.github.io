@@ -1,7 +1,11 @@
-/* Personal Life Page - Fun & Vibrant Styles */
+/* Personal Life Page - Earth & Forest Tones */
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 .personal-life-container {
@@ -9,9 +13,9 @@
     margin: 0 auto;
     padding: 2rem 1.5rem 4rem;
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-    color: #2c3e50;
+    color: #2d3b2d;
     line-height: 1.7;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f5f3ed 0%, #e8e5d5 100%);
     min-height: 100vh;
 }
 
@@ -20,6 +24,7 @@
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem 1rem;
+    border-bottom: 3px solid #7a9b76;
     animation: fadeInDown 0.8s ease;
 }
 
@@ -37,7 +42,7 @@
 .main-title {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #5a7556 0%, #7a9b76 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -47,7 +52,7 @@
 
 .subtitle {
     font-size: 1.3rem;
-    color: #6b7280;
+    color: #6b7d5f;
     font-style: italic;
     margin: 0;
     font-weight: 300;
@@ -59,8 +64,8 @@
     padding: 2.5rem;
     border-radius: 20px;
     margin-bottom: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-left: 6px solid #667eea;
+    box-shadow: 0 10px 30px rgba(90, 117, 86, 0.15);
+    border-left: 6px solid #7a9b76;
     animation: fadeInUp 0.8s ease 0.2s both;
 }
 
@@ -82,25 +87,25 @@
 
 .intro-text {
     font-size: 1.15rem;
-    color: #4b5563;
+    color: #4a5647;
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
 .intro-text-last {
     font-size: 1.15rem;
-    color: #4b5563;
+    color: #4a5647;
     margin-bottom: 0;
     font-weight: 600;
     line-height: 1.8;
 }
 
 .highlight {
-    background: linear-gradient(120deg, #fef3c7 0%, #fcd34d 100%);
+    background: linear-gradient(120deg, #e8f4e5 0%, #d4e8d0 100%);
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     font-weight: 600;
-    color: #78350f;
+    color: #3d5a39;
 }
 
 /* Hobbies Section */
@@ -114,7 +119,7 @@
     background: white;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(90, 117, 86, 0.15);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
@@ -133,20 +138,20 @@
 
 .hobby-card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(90, 117, 86, 0.2);
 }
 
 .hobby-card:hover::before {
     height: 10px;
 }
 
-/* Individual Card Colors */
+/* Individual Card Colors - Mix of greens and browns */
 .cooking-card {
     animation-delay: 0.3s;
 }
 
 .cooking-card::before {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #a0826d 0%, #8b7355 100%);
 }
 
 .fitness-card {
@@ -154,7 +159,7 @@
 }
 
 .fitness-card::before {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #6b8e67 0%, #5a7556 100%);
 }
 
 .dancing-card {
@@ -162,7 +167,7 @@
 }
 
 .dancing-card::before {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    background: linear-gradient(135deg, #8b9870 0%, #7a8a64 100%);
 }
 
 /* Hobby Icons */
@@ -200,7 +205,7 @@
 
 .hobby-title {
     font-size: 2rem;
-    color: #1f2937;
+    color: #2d3b2d;
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -218,44 +223,44 @@
 .tag {
     display: inline-block;
     padding: 0.4rem 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #5a7556 0%, #6b8e67 100%);
     color: white;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 2px 8px rgba(90, 117, 86, 0.3);
 }
 
 .cooking-card .tag {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
+    background: linear-gradient(135deg, #a0826d 0%, #8b7355 100%);
+    box-shadow: 0 2px 8px rgba(160, 130, 109, 0.3);
 }
 
 .fitness-card .tag {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
+    background: linear-gradient(135deg, #6b8e67 0%, #5a7556 100%);
+    box-shadow: 0 2px 8px rgba(107, 142, 103, 0.3);
 }
 
 .dancing-card .tag {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-    box-shadow: 0 2px 8px rgba(250, 112, 154, 0.3);
+    background: linear-gradient(135deg, #8b9870 0%, #7a8a64 100%);
+    box-shadow: 0 2px 8px rgba(139, 152, 112, 0.3);
 }
 
 .hobby-description {
     font-size: 1.05rem;
-    color: #6b7280;
+    color: #4a5647;
     margin: 0;
     line-height: 1.8;
 }
 
 .hobby-description strong {
-    color: #374151;
+    color: #2d3b2d;
     font-weight: 700;
 }
 
 .hobby-description em {
-    color: #9333ea;
+    color: #5a7556;
     font-style: italic;
 }
 

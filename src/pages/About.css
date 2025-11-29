@@ -1,42 +1,57 @@
-/* About Page - Warm & Personal Styles */
+/* About Page - Earth & Forest Tones */
 
 * {
     box-sizing: border-box;
 }
 
 .about-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 3rem 2rem 4rem;
-    font-family: 'Georgia', 'Cambria', 'Times New Roman', serif;
-    color: #2d3748;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #2d3b2d;
     line-height: 1.8;
-    background: linear-gradient(to bottom, #faf8f3 0%, #f5f1e8 100%);
+    background: linear-gradient(135deg, #f5f3ed 0%, #e8e5d5 100%);
     min-height: 100vh;
 }
 
 /* Header Section */
 .about-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid #d4a574;
+    border-bottom: 3px solid #7a9b76;
 }
 
 .about-title {
     font-size: 3.5rem;
-    font-weight: 700;
-    color: #3e2723;
+    font-weight: 800;
+    background: linear-gradient(135deg, #5a7556 0%, #7a9b76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin: 0 0 0.5rem 0;
     letter-spacing: -1px;
+    animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-subtitle {
-    font-size: 1.2rem;
-    color: #8b6f47;
+    font-size: 1.3rem;
+    color: #6b7d5f;
+    font-style: italic;
     margin: 0;
     font-weight: 400;
-    font-style: italic;
 }
 
 /* Main Content */
@@ -50,9 +65,21 @@
 .intro-card {
     background: white;
     padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(139, 111, 71, 0.1);
-    border-left: 5px solid #d4a574;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 117, 86, 0.15);
+    border-left: 6px solid #7a9b76;
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .greeting {
@@ -78,42 +105,54 @@
 
 .greeting h2 {
     font-size: 2rem;
-    color: #3e2723;
+    color: #2d3b2d;
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .intro-text {
-    font-size: 1.2rem;
-    color: #4a5568;
+    font-size: 1.15rem;
+    color: #4a5647;
     margin: 0;
     line-height: 1.9;
 }
 
 .highlight-location {
-    color: #8b6f47;
-    font-weight: 600;
-    border-bottom: 2px solid #d4a574;
-    padding-bottom: 2px;
+    background: linear-gradient(120deg, #e8f4e5 0%, #d4e8d0 100%);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #3d5a39;
 }
 
 /* Journey Section */
 .journey-section {
     background: white;
     padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(139, 111, 71, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 117, 86, 0.15);
+    animation: fadeInUp 0.8s ease 0.3s both;
 }
 
 .section-title {
     font-size: 1.8rem;
-    color: #3e2723;
+    color: #2d3b2d;
     margin-top: 0;
     margin-bottom: 2rem;
-    font-weight: 600;
-    border-bottom: 3px solid #d4a574;
+    font-weight: 700;
+    position: relative;
     padding-bottom: 0.75rem;
-    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #5a7556, #7a9b76);
+    border-radius: 2px;
 }
 
 /* Timeline */
@@ -129,7 +168,7 @@
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(to bottom, #d4a574 0%, #c9995b 100%);
+    background: linear-gradient(to bottom, #7a9b76 0%, #5a7556 100%);
 }
 
 .timeline-item {
@@ -148,9 +187,19 @@
     width: 16px;
     height: 16px;
     background: white;
-    border: 3px solid #d4a574;
+    border: 3px solid #7a9b76;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #faf8f3;
+    box-shadow: 0 0 0 4px rgba(122, 155, 118, 0.1);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 4px rgba(122, 155, 118, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(122, 155, 118, 0.05);
+    }
 }
 
 .timeline-content {
@@ -159,77 +208,78 @@
 
 .company-name {
     font-size: 1.4rem;
-    color: #3e2723;
+    color: #2d3b2d;
     margin: 0 0 0.5rem 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .role-title {
     font-size: 1.1rem;
-    color: #8b6f47;
+    color: #5a7556;
     margin: 0 0 1rem 0;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .journey-description {
     font-size: 1.05rem;
-    color: #4a5568;
+    color: #4a5647;
     margin: 0;
     line-height: 1.8;
 }
 
 /* Current Status */
 .current-status {
-    background: linear-gradient(135deg, #f8f4ed 0%, #faf8f3 100%);
+    background: white;
     padding: 2.5rem;
-    border-radius: 16px;
-    border: 2px solid #d4a574;
-    box-shadow: 0 4px 20px rgba(139, 111, 71, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 117, 86, 0.15);
+    border: 2px solid #7a9b76;
+    animation: fadeInUp 0.8s ease 0.4s both;
 }
 
 .status-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background: white;
+    background: linear-gradient(135deg, #6b8e67 0%, #5a7556 100%);
+    color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
-    font-weight: 600;
-    color: #3e2723;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    box-shadow: 0 2px 10px rgba(139, 111, 71, 0.15);
+    box-shadow: 0 4px 15px rgba(107, 142, 103, 0.4);
     font-size: 1.1rem;
 }
 
 .status-dot {
     width: 12px;
     height: 12px;
-    background: #48bb78;
+    background: white;
     border-radius: 50%;
-    animation: pulse 2s ease-in-out infinite;
+    animation: statusPulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes statusPulse {
     0%, 100% {
         opacity: 1;
         transform: scale(1);
     }
     50% {
         opacity: 0.7;
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 
 .status-text {
     font-size: 1.15rem;
-    color: #4a5568;
+    color: #4a5647;
     margin: 0;
     line-height: 1.9;
 }
 
 .status-text strong {
-    color: #3e2723;
+    color: #2d3b2d;
     font-weight: 700;
 }
 
@@ -237,30 +287,40 @@
 .interests-card {
     background: white;
     padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(139, 111, 71, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 117, 86, 0.15);
+    animation: fadeInUp 0.8s ease 0.5s both;
 }
 
 .interests-text {
     font-size: 1.15rem;
-    color: #4a5568;
+    color: #4a5647;
     margin: 0;
     line-height: 1.9;
 }
 
 .emphasis {
-    color: #8b6f47;
+    background: linear-gradient(135deg, #5a7556 0%, #7a9b76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
-    font-style: italic;
 }
 
 /* CTA Card */
 .cta-card {
-    background: linear-gradient(135deg, #8b6f47 0%, #a68a5e 100%);
+    background: linear-gradient(135deg, #5a7556 0%, #6b8e67 100%);
     padding: 2.5rem;
-    border-radius: 16px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(139, 111, 71, 0.3);
+    box-shadow: 0 10px 30px rgba(90, 117, 86, 0.4);
+    animation: fadeInUp 0.8s ease 0.6s both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(90, 117, 86, 0.5);
 }
 
 .cta-text {

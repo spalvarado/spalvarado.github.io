@@ -1,0 +1,278 @@
+/* Contact Page - Earth & Forest Tones */
+
+* {
+    box-sizing: border-box;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f3ed 0%, #e8e5d5 100%);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #5a7556 0%, #7a9b76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(90, 117, 86, 0.15);
+    border-top: 5px solid #7a9b76;
+}
+
+.contact form h2 {
+    font-size: 2.2rem;
+    color: #2d3b2d;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Input Boxes */
+.input-box {
+    margin-bottom: 1.8rem;
+}
+
+.input-box label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a5647;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.3px;
+}
+
+/* Input Fields */
+.field {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #d4e8d0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background: #f9faf8;
+}
+
+.field:focus {
+    border-color: #7a9b76;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(122, 155, 118, 0.1);
+    transform: translateY(-2px);
+}
+
+.field::placeholder {
+    color: #a8b5a3;
+}
+
+/* Select Dropdown */
+#inquiry {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #d4e8d0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background: #f9faf8;
+    cursor: pointer;
+    color: #4a5647;
+}
+
+#inquiry:focus {
+    border-color: #7a9b76;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(122, 155, 118, 0.1);
+}
+
+#inquiry option {
+    padding: 0.5rem;
+}
+
+/* Textarea */
+.mess {
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #5a7556 0%, #6b8e67 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 4px 15px rgba(90, 117, 86, 0.4);
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(90, 117, 86, 0.5);
+    background: linear-gradient(135deg, #6b8e67 0%, #5a7556 100%);
+}
+
+button[type="submit"]:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(90, 117, 86, 0.4);
+}
+
+/* Status Message */
+.status-message {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.status-message.success {
+    background: #e8f5e5;
+    color: #2d5a28;
+    border: 2px solid #6b8e67;
+}
+
+.status-message.error {
+    background: #fef0ef;
+    color: #8b4a47;
+    border: 2px solid #c27c76;
+}
+
+.status-message.sending {
+    background: #f4f1e8;
+    color: #6b5d2d;
+    border: 2px solid #a89870;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .contact form {
+        padding: 2.5rem;
+    }
+
+    .contact form h2 {
+        font-size: 1.9rem;
+    }
+
+    .field,
+    #inquiry {
+        padding: 0.9rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    button[type="submit"] {
+        padding: 1.1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact form {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact form h2 {
+        font-size: 1.7rem;
+    }
+
+    .input-box {
+        margin-bottom: 1.5rem;
+    }
+
+    .field,
+    #inquiry {
+        padding: 0.85rem;
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Input Animation on Load */
+.input-box {
+    animation: slideIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.input-box:nth-child(1) { animation-delay: 0.1s; }
+.input-box:nth-child(2) { animation-delay: 0.2s; }
+.input-box:nth-child(3) { animation-delay: 0.3s; }
+.input-box:nth-child(4) { animation-delay: 0.4s; }
+.input-box:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
