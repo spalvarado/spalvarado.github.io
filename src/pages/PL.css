@@ -1,0 +1,333 @@
+/* Personal Life Page - Fun & Vibrant Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+.personal-life-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #2c3e50;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Header Section */
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 1rem;
+    animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #6b7280;
+    font-style: italic;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Introduction Section */
+.intro-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #667eea;
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.intro-text-last {
+    font-size: 1.15rem;
+    color: #4b5563;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.highlight {
+    background: linear-gradient(120deg, #fef3c7 0%, #fcd34d 100%);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #78350f;
+}
+
+/* Hobbies Section */
+.hobbies-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.hobby-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.hobby-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    transition: height 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-card:hover::before {
+    height: 10px;
+}
+
+/* Individual Card Colors */
+.cooking-card {
+    animation-delay: 0.3s;
+}
+
+.cooking-card::before {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.fitness-card {
+    animation-delay: 0.4s;
+}
+
+.fitness-card::before {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.dancing-card {
+    animation-delay: 0.5s;
+}
+
+.dancing-card::before {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+/* Hobby Icons */
+.hobby-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hobby-card:hover .hobby-icon {
+    animation: spin 0.6s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    to {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.hobby-title {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Tags */
+.hobby-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.cooking-card .tag {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
+}
+
+.fitness-card .tag {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
+}
+
+.dancing-card .tag {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    box-shadow: 0 2px 8px rgba(250, 112, 154, 0.3);
+}
+
+.hobby-description {
+    font-size: 1.05rem;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.hobby-description strong {
+    color: #374151;
+    font-weight: 700;
+}
+
+.hobby-description em {
+    color: #9333ea;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .personal-life-container {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .intro-section {
+        padding: 2rem;
+    }
+
+    .intro-text,
+    .intro-text-last {
+        font-size: 1rem;
+    }
+
+    .hobby-card {
+        padding: 2rem;
+    }
+
+    .hobby-icon {
+        font-size: 3rem;
+    }
+
+    .hobby-title {
+        font-size: 1.7rem;
+    }
+
+    .hobby-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .intro-section {
+        padding: 1.5rem;
+    }
+
+    .hobby-card {
+        padding: 1.5rem;
+    }
+
+    .hobby-icon {
+        font-size: 2.5rem;
+    }
+
+    .hobby-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop Grid Layout */
+@media (min-width: 900px) {
+    .hobbies-section {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

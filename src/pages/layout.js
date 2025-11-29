@@ -1,30 +1,33 @@
 import { Outlet, Link } from "react-router-dom";
+import "./layout.css";
 
 const Layout = () => {
     return (
         <>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
+            <nav className="nav-container">
+                <ul className="nav-menu">
+                    <li className="nav-item">
+                        <Link to="/" className="nav-link">Home</Link>
                     </li>
-                    <li>
-                        <Link to="/personal">Personal</Link>
+                    <li className="nav-item">
+                        <Link to="/personal" className="nav-link">Personal</Link>
                     </li>
-                    {/*<li>*/}
-                    {/*    <Link to="/experience">Experience</Link>*/}
-                    {/*</li>*/}
-                    <li>
-                        <Link to="/about">About</Link>
+                    <li className="nav-item">
+                        <Link to="/experience" className="nav-link">Experience</Link>
                     </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
+                    <li className="nav-item">
+                        <Link to="/about" className="nav-link">About</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
                 </ul>
             </nav>
-            <Outlet />
+            <div className="outlet-container">
+                <Outlet />
+            </div>
         </>
-    )
+    );
 };
 
 export default Layout;

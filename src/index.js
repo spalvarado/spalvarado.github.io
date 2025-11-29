@@ -1,13 +1,12 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
-// import emailjs from '@emailjs/browser';
 import Layout from "./pages/layout"
 import Home from "./pages/home";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import About from "./pages/About";
 import PersonalLife from "./pages/PersonalLife";
+import Experience from "./pages/Experience";
 
 export default function App() {
     return (
@@ -15,6 +14,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
+                    <Route path="Experience" element={<Experience />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="personal" element={<PersonalLife />}/>
                     <Route path="about" element={<About />} />
