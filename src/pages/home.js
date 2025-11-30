@@ -15,8 +15,8 @@ const Home = () => {
                         I blend creativity with code to create meaningful digital experiences.
                     </p>
                     <div className="hero-buttons">
-                        <a href="/experience" className="btn-primary">View My Work</a>
-                        <a href="/contact" className="btn-secondary">Get In Touch</a>
+                        <a href="/#/experience" className="btn-primary">View My Work</a>
+                        <a href="/#/contact" className="btn-secondary">Get In Touch</a>
                     </div>
                 </div>
             </section>
@@ -40,7 +40,7 @@ const Home = () => {
                             training for my first physique competition, or dancing salsa with
                             Mambo Dinamico Dance Company.
                         </p>
-                        <a href="/about" className="text-link">Learn more about my journey →</a>
+                        <a href="/#/about" className="text-link">Learn more about my journey →</a>
                     </div>
                     <div className="skills-highlight">
                         <h3>Core Skills</h3>
@@ -92,7 +92,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="section-cta">
-                    <a href="/experience" className="text-link-large">View all projects →</a>
+                    <a href="/#/experience" className="text-link-large">View all projects →</a>
                 </div>
             </section>
 
@@ -102,19 +102,19 @@ const Home = () => {
                     <div className="card-icon">🎯</div>
                     <h3>My Journey</h3>
                     <p>Explore my professional experience and technical skills</p>
-                    <a href="/about" className="card-link">Read More</a>
+                    <a href="/#/about" className="card-link">Read More</a>
                 </div>
                 <div className="quick-link-card">
                     <div className="card-icon">🌟</div>
                     <h3>Personal Life</h3>
                     <p>Discover my hobbies, passions, and what makes me tick</p>
-                    <a href="/personal" className="card-link">Explore</a>
+                    <a href="/#/personal" className="card-link">Explore</a>
                 </div>
                 <div className="quick-link-card">
                     <div className="card-icon">📬</div>
                     <h3>Let's Connect</h3>
                     <p>Interested in working together? Drop me a message</p>
-                    <a href="/contact" className="card-link">Contact Me</a>
+                    <a href="/#/contact" className="card-link">Contact Me</a>
                 </div>
             </section>
 
